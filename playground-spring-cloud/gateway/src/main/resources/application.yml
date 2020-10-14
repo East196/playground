@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - predicates:
+            - Path=/producer/**
+          filters:
+            - StripPrefix=1
+          uri: lb://consul-producer/hello
+        - predicates:
+            - Path=/consumer/**
+          filters:
+            - StripPrefix=1
+          uri: lb://consul-consumer/hello
+server:
+  port: 9001
