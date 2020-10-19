@@ -1,0 +1,10 @@
+server:
+  port: 9021
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      enabled: true
+  application:
+    name: consul-config-client
