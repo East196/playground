@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <destination>47.112.108.102:9100</destination>
+        <includeCallerData>true</includeCallerData>
+
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <includeCallerData>true</includeCallerData>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>log/weather.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.github.east196" level="info" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="stash" />
+        <appender-ref ref="FILE"/>
+    </logger>
+
+<!--    <logger name="com.github.east196.playground" level="debug" additivity="false">-->
+<!--        <appender-ref ref="CONSOLE"/>-->
+<!--        <appender-ref ref="stash" />-->
+<!--    </logger>-->
+
+</configuration>
