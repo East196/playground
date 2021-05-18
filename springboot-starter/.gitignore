@@ -1,0 +1,11 @@
+.idea
+*.iml
+/.classpath
+/.project
+/.externalToolBuilders
+/.settings
+/target
+/src/main/resources/dev
+/src/main/webapp/WEB-INF/_temp
+/src/main/webapp/WEB-INF/module
+/src/main/webapp/eova/plugins/easy/*.jscompress
