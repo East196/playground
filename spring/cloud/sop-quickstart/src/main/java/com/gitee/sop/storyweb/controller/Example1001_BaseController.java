@@ -60,7 +60,7 @@ public class Example1001_BaseController {
     @Value("${server.port}")
     private int port;
 
-    // http://localhost:2222/stroy/get
+    // http://localhost:2222/story/get
     // 原生的接口，可正常调用
     @RequestMapping("/get")
     public StoryResult get() {
