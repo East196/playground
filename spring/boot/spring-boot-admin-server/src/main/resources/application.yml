@@ -1,0 +1,10 @@
+server.port: 9000
+spring:
+  boot:
+    admin:
+      application:
+        name: spring-boot-admin-server
+  security:
+    user:
+      name: admin
+      password: admin
