@@ -1,9 +1,9 @@
 server:
-  port: 2224
+  port: 3333
 
 spring:
   application:
-    name: story-service
+    name: sidecar-service
   cloud:
     nacos:
       discovery:
@@ -28,5 +28,5 @@ management:
       show-details: always
 
 logging:
-  file: story.log
+  file: sidecar.log
 

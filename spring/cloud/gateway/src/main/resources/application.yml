@@ -1,4 +1,9 @@
+server:
+  port: 9001
+
 spring:
+  application:
+    name: gateway
   cloud:
     gateway:
       routes:
@@ -12,5 +17,19 @@ spring:
           filters:
             - StripPrefix=1
           uri: lb://consul-consumer/hello
-server:
-  port: 9001
+    consul:
+      host: localhost
+      port: 8500
+  zipkin:
+    enable: true
+    base-url: http://localhost:9411
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

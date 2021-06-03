@@ -1,0 +1,23 @@
+server.port: 9000
+spring:
+  application:
+    name: consul-admin-server
+  boot:
+    admin:
+      discovery:
+        ignored-services: consul
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: ${spring.application.name}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
