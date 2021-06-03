@@ -15,4 +15,6 @@ consul nacos config
 #### 配置客户端
 
 ## 综合
+sop-quickstart
+sop-sidecar
 

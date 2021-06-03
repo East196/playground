@@ -30,6 +30,10 @@
             <artifactId>spring-boot-admin-starter-server</artifactId>
             <version>${spring-admin.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
