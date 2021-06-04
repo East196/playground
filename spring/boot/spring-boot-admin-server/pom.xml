@@ -49,6 +49,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>spring-boot-admin-server</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

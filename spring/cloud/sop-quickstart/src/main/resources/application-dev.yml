@@ -1,6 +1,8 @@
 server:
   port: 3333
-
+sop:
+  restful:
+    enable: false
 spring:
   application:
     name: sidecar-service
