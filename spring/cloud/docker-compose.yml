@@ -1,0 +1,11 @@
+version: '0.1'
+services:
+  sba:
+    image: sba
+    ports:
+      - "9600:9600"
+    restart: "always"
+    container_name: sba
+#    volumes:
+#      - ./target/spring-boot-admin-server.jar:/root/spring-boot-admin-server.jar
+#    entrypoint: java -jar /root/spring-boot-admin-server.jar

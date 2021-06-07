@@ -1,0 +1,193 @@
+  334  docker
+  335  docker images
+  336  docker search python
+  337  docker-compose 
+  343  docker build -t sba .
+  344  docker build -t sba .
+  345  docker build -t sba .
+  346  docker build -t sba .
+  348  docker build -t sba .
+  349  docker images
+  350  docker run -d sba:lastest -n sba
+  351  docker run -d sba:latest -n sba
+  352  docker ps
+  353  docker stop sba
+  354  docker rm romantic_boyd
+  355  docker stop romantic_boyd
+  356  docker rm romantic_boyd
+  357  docker ps
+  358  docker run -d sba:latest --name sba1 -p 9600:9600
+  359  docker ps
+  360  docker run --name sba1 -p 9600:9600 -d sba:latest
+  362  docker ps
+  363  docker stop clever_archimedes
+  366  docker ps
+  367  docker run --name sba1 -p 9600:9600 -d sba:latest
+  368  docker ps -a
+  369  docker start sba1
+  370  docker rm clever_archimedes
+  371  docker ps -a
+  372  docker stop sba1
+  373  docker rm sba1
+  374  docker run -it --name sba1 -p 9600:9600 -d sba:latest /bin/bash
+  375  docker ps -a
+  376  docker run -it sba1 /bin/bash
+  377  docker stop sba1
+  378  docker rm sba1
+  379  docker run --name sba1 -p 9600:9600 -d sba:latest
+  380  docker logs -f sba1
+  382  docker ps -a
+  383  docker stop sba1
+  384  docker rm sba1
+  385  docker run --name sba1 -p 127.0.0.1:9600:9600 -d sba:latest
+  386  docker ps -a
+  387  docker logs -f sba1
+  388  docker-machine ip default
+  389  docker ps -a
+  390  docker stop sba1
+  391  docker rm sba1
+  392  docker run --name sba1 -p 9600:9600 -d sba:latest
+  393* docker 
+  394  docker build -t sba-alpine .
+  395  docker images
+  396  docker run --name sba1 -p 9700:9600 -d sba-alpine
+  397  docker run --name sba2 -p 9700:9600 -d sba-alpine
+  398  docker logs -f sba2
+  399  docker ps
+  400  docker stop sba1
+  401  docker rm sba1
+  402  docker images
+  403  docker rmi java
+  404  docker rmi java:8
+  405  docker rmi sba:latest
+  406  docker images
+  407  docker pull redis-alpine
+  408  docker search redis
+  409  docker-compose --version
+  410  docker-compose up
+  411  docker build -t sba .
+  412  docker-compose up
+  413  docker-compose up
+  414  docker-compose up
+  415  docker-compose up
+  417  docker-compose up
+  418  docker ps
+  419  docker ps -a
+  420  docker rm sba
+  421  docker-compose up
+  422  docker start sba
+  424  docker build -t sbacpy .
+  425  docker images
+  426  docker start sbacpy
+  427  docker run -p 5000:5000  -d sbacpy
+  428  docker logs -f sbacpy
+  429  docker ps -a
+  430  docker logs -f modest_moser
+  431  docker build -t sbacpy .
+  432  docker images
+  433  docker rmi 56d66ac30aa3
+  434  docker images
+  435  docker stop modest_moser
+  436  docker rm modest_moser
+  437  docker rmi 56d66ac30aa3
+  438  docker images
+  439  docker ps -a
+  440  docker stop sba2
+  441  docker rm sba2
+  442  docker images
+  443  docker rmi sba-alpine
+  444  docker images
+  445  docker run -p 5000:5000  -n sbacpy -d sbacpy
+  446  docker run -p 5000:5000  --name sbacpy -d sbacpy
+  447  docker logs -f sbacpy
+  448  docker-machine ip default
+  451  docker build -t sbacj .
+  452  docker run -p 9699:9699  --name sbaj1 -d sbaj
+  453  docker run -p 9699:9699  --name sbacj1 -d sbacj
+  454  docker run -p 9699:9699  --name sbacj2 -d sbacj
+  455  docker ps -a
+  456  docker logs -f sbacj2
+  457  docker rm sbacj2
+  458  docker rm sbacj1
+  459  docker rmi sbacj
+  460  docker build -t sbacj .
+  461  docker run -p 9699:9699  --name sbacj1 -d sbacj
+  462  docker run -p 9698:9699  --name sbacj1 -d sbacj
+  463  docker run -p 9698:9699  --name sbacj2 -d sbacj
+  464  docker ps -a
+  465  docker stop sbacj2
+  466  docker stop sbacj1
+  467  docker rm sbacj1
+  468  docker rm sbacj12
+  469  docker rm sbacj2
+  470  docker rmi sbacj
+  471  docker build -t sbacj .
+  472  docker run -p 9698:9699  --name sbacj2 -d sbacj
+  473  docker run -p 9699:9699  --name sbacj1 -d sbacj
+  474  docker ps -a
+  475  docker rm sbacj2
+  476  docker rm sbacj1
+  477  docker rmi sbacj
+  478  docker build -t sbacj .
+  479  docker run -p 9699:9699  --name sbacj1 -d sbacj
+  480  docker ps -a
+  481  docker rm sbacj1
+  482  docker stop sbacj1
+  483  docker stop sbacj2
+  484  docker rm sbacj2
+  485  docker rm sbacj1
+  486  docker rmi sbacj
+  487  docker build -t sbacj .
+  488  docker run -p 9699:9699  --name sbacj1 -d sbacj
+  489  docker logs -f sbacj
+  490  docker logs -f sbacj1
+  491  docker stop sbacj
+  492  docker ps -a
+  493  docker stop sbacj1
+  494  docker ps -a
+  495  docker logs -f sbacj1
+  496  docker rmi sbacj
+  497  docker rm sbacj1
+  498  docker rmi sbacj
+  499  docker build -t sbacj .
+  500  docker images
+  501  docker run -p 9699:9699  --name sbacj1 -d sbacj
+  502  docker logs- f sbacj1
+  503  docker logs  -f sbacj1
+  504  docker logs  -f sba
+  505  docker exec -it sbacj1 /bin/bash
+  506  docker exec -it sbacj1 /bin/sh
+  507  docker  ps -a
+  508  docker-machine ip default
+  512  docker  ps -a
+  513  docker stop sbacpy
+  514  docker rm sbacpy
+  515  docker rmi sbacpy
+  516  docker stop sbacj1
+  517  docker rm sbacj1
+  518  docker rmi sbacj
+  519  docker ps -a
+  520  docker images
+  521  docker build -t sbacj .
+  523  docker build -t sbacpy .
+  524  docker run -p 9699:9699  --name sbacj1 -d sbacj
+  525  docker run -p 5000:5000  --name sbacpy -d sbacpy
+  526  docker ps -a
+  527  docker ps -a
+  528  docker stop sbacpy
+  529  docker rm sbacpy
+  530  docker rmi sbacpy
+  531  docker build -t sbacpy .
+  532  docker run -p 5000:5000  --name sbacpy -d sbacpy
+  533  docker ps -a
+  534  docker ps -a
+  535  docker logs -f sbacpy
+  536  docker stop sbacpy
+  537  docker rm sbacpy
+  538  docker rmi sbacpy
+  539  docker build -t sbacpy .
+  540  docker run -p 5000:5000  --name sbacpy -d sbacpy
+  541  docker logs -f sbacpy
+  542  docker run -p 9698:9699  --name sbacj2 -d sbacj
+  543  docker run -p 9697:9699  --name sbacj3 -d sbacj
+  545  history |grep docker > docker.history.log
