@@ -7,7 +7,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        server-addr: 192.168.99.1:8848
 
 management:
   endpoints:
@@ -19,4 +19,5 @@ management:
       show-details: always
 
 logging:
-  file: admin.log
+  file:
+    path: /app/nacos-admin-server/log
